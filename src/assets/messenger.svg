@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.192" cy="0.995" r="1.09" gradientTransform="matrix(1, 0, 0, -1, 0, -273.134)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0091ff"/>
+      <stop offset="0.61" stop-color="#9833ff"/>
+      <stop offset="0.935" stop-color="#ff5280"/>
+      <stop offset="1" stop-color="#ff7061"/>
+    </radialGradient>
+  </defs>
+  <g id="logo" transform="translate(-1608.098 -7765.956)">
+    <path id="bubble" d="M1633.1,7765.956c-14.083,0-25,10.316-25,24.25a23.718,23.718,0,0,0,7.852,17.937,2,2,0,0,1,.671,1.425l.136,4.447a2,2,0,0,0,2.807,1.769l4.962-2.191a2,2,0,0,1,1.335-.1,27.274,27.274,0,0,0,7.237.961c14.083,0,25-10.316,25-24.25S1647.181,7765.956,1633.1,7765.956Z" fill-rule="evenodd" fill="url(#radial-gradient)"/>
+    <path id="bolt" d="M1618.086,7797.3l7.343-11.651a3.751,3.751,0,0,1,5.423-1l5.841,4.38a1.5,1.5,0,0,0,1.807,0l7.888-5.987a1.188,1.188,0,0,1,1.723,1.58l-7.344,11.651a3.75,3.75,0,0,1-5.423,1l-5.841-4.381a1.5,1.5,0,0,0-1.806.006l-7.889,5.986A1.187,1.187,0,0,1,1618.086,7797.3Z" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

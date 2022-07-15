@@ -1,1 +1,308 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "MyriadPro";
+    src: local("MyriadPro"),
+      url("./assets/fonts/MyriadPro-Regular.otf") format("truetype");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "PSLxKittithada";
+    src: local("PSLxKittithada"),
+      url("./assets/fonts/PSLXKITTITHADA BOLD_0.TTF") format("truetype");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "SukhumvitSet";
+    src: local("SukhumvitSet"),
+      url("./assets/fonts/SukhumvitSet.ttc") format("truetype");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "David";
+    src: local("david"), url("./assets/fonts/david.ttf") format("truetype");
+    font-weight: 400;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #4d4d4d;
+  }
+  
+  * {
+    font-family: "David", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    word-break: break-word;
+  }
+  strong {
+    font-weight: 500;
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .subTitle {
+    font-size: 32px;
+    font-weight: 500;
+    word-break: break-word;
+  }
+  .text {
+    font-size: 24px;
+    word-break: break-word;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0px 0px;
+    flex-wrap: wrap;
+  }
+  
+  .largeButton {
+    margin: 16px 56px;
+    height: 72px;
+    font-size: 32px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    width: 288px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 16%);
+  }
+  .normalButton {
+    margin: 16px 24px;
+    height: 56px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    width: 288px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 16%);
+  }
+  .miniButton {
+    margin: 16px;
+    height: 36px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 24px;
+    width: auto;
+  }
+  
+  .regularButton {
+    margin: 16px;
+    height: 48px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 0px 24px;
+    width: auto;
+  }
+  
+  .redButton {
+    background: transparent linear-gradient(0, #98742a 0, #fac352 100%) 0 0
+      no-repeat padding-box;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .redButton:hover {
+    border: 1px solid #fac352;
+    color: #fac352;
+    background: #000;
+  }
+  
+  .primaryButton {
+    background: transparent linear-gradient(0, #757373 0, #bfbfbf 100%) 0 0
+      no-repeat padding-box;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .primaryButton:hover {
+    border: 1px solid #bfbfbf;
+    background: #000;
+  }
+  
+  .clearButton {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .defaultButton {
+    background-color: #e6e6e6;
+    color: #333333;
+  }
+  .yellowButton {
+    background: transparent linear-gradient(0, #98742a 0, #fac352 100%) 0 0
+      no-repeat padding-box;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .yellowButton:hover {
+    background: transparent linear-gradient(0, #fac352 0, #98742a 100%) 0 0
+      no-repeat padding-box;
+  }
+  
+  .borderPrimaryButton {
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+  }
+  .borderYellowButton {
+    color: #f0d850;
+    background-color: transparent;
+    border: 1px solid #f0d850;
+    cursor: pointer;
+  }
+  .borderYellowButton:hover {
+    color: #f0d850;
+    background-color: rgba(240, 216, 81, 50%);
+    border: 1px solid #f0d850;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .breadcrumb a {
+    margin-right: 8px;
+  }
+  .breadcrumb a:not(:last-child)::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    font-weight: 700;
+    color: #333333;
+    margin-left: 8px;
+    vertical-align: inherit;
+  }
+  input,
+  select {
+    height: 40px;
+    padding: 0px 8px;
+    font-size: 16px;
+    border: 1px solid #808080;
+    color: #808080;
+    background-color: #ffffff;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(50%);
+  }
+  
+  .inputWithTag {
+    position: relative;
+    width: 100%;
+  }
+  .inputWithTag .textTag {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    width: 62px;
+    text-align: center;
+  }
+  
+  p.invalid {
+    color: red;
+    margin: 4px;
+  }
+  
+  .sectionTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionTitle p {
+    margin: 0px 0px 0px 16px;
+  }
+  .sectionTitle img {
+    height: 40px;
+  }
+  
+  .mySwiper .swiper {
+    width: 100vw;
+    height: 640px;
+  }
+  .mySwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mySwiper .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    background: #c6c6c6;
+  }
+  
+  .mySwiper .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #f0d850;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .largeButton {
+      width: calc(100% - 48px);
+    }
+    .normalButton {
+      width: calc(100% - 48px);
+      height: 40px;
+      font-size: 24px;
+    }
+    .miniButton {
+      margin: 4px;
+      padding: 0 12px;
+      width: 240px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .subTitle {
+      font-size: 20px;
+      font-weight: 500;
+      word-break: break-word;
+    }
+    .text {
+      font-size: 16px;
+      word-break: break-word;
+    }
+    .sectionTitle p {
+      font-size: 28px !important;
+    }
+    .sectionTitle img {
+      height: 24px !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .sectionTitle p {
+      font-size: 24px !important;
+    }
+    .sectionTitle img {
+      height: 32px !important;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .largeButton {
+      width: calc(100% - 48px);
+      margin: 16px 24px;
+      font-size: 24px;
+      padding: 16px 32px;
+    }
+    .buttonGroup {
+      margin: 32px;
+    }
+  }
+  

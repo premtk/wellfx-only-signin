@@ -1,0 +1,32 @@
+<div class="signinBackground">
+  <app-header></app-header>
+  <app-section-logo></app-section-logo>
+  <div class="sectionSignin">
+    <div class="signinBox">
+      <p>{{ "SignIn" | translate }}</p>
+      <div class="signinForm">
+        <img src="../../assets/login-icon.png" alt="" height="20px" />
+        <input
+          class="marginInput"
+          type="text"
+          name="contactName"
+          placeholder="Email"
+        />
+      </div>
+      <div class="signinForm">
+        <img src="../../assets/password-icon.png" alt="" height="32px" />
+        <input
+          class="marginInput"
+          type="password"
+          name="contactName"
+          placeholder="Password"
+        />
+      </div>
+      <button type="submit" class="yellowButton regularButton contactButton">
+        {{ "SignInButton" | translate }}
+      </button>
+      <a>{{ "ForgotPassword" | translate }}</a>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

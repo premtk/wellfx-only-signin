@@ -1,0 +1,56 @@
+<header>
+  <div class="mainHeader">
+    <a routerLink="/" routerLinkActive="active">
+      <img class="logo" src="../../assets/logo.svg" />
+    </a>
+    <ul class="contact" id="hamburger">
+      <li>
+        <a routerLink="/aboutus" routerLinkActive="active" translate
+          >About us</a
+        >
+      </li>
+      <li>
+        <a routerLink="/accounttype" routerLinkActive="active" translate
+          >Account Type</a
+        >
+      </li>
+      <li>
+        <a routerLink="/platform" routerLinkActive="active" translate
+          >Platform</a
+        >
+      </li>
+
+      <li>
+        <a routerLink="/partner" routerLinkActive="active" translate>Partner</a>
+      </li>
+      <li>
+        <a routerLink="/contactus" routerLinkActive="active" translate
+          >Contact us</a
+        >
+      </li>
+      <li>
+        <div class="langSelect">
+          <img class="langIcon" src="../../assets/globe.png" />
+          <select (change)="changeLanguage($event)">
+            <option *ngFor="let value of lang" [value]="value.value">
+              {{ value.view }}
+            </option>
+          </select>
+        </div>
+      </li>
+      <!-- <li>
+          <a routerLink="/signup" routerLinkActive="active" translate>Sign up</a>
+        </li> -->
+      <li>
+        <!-- <a href="https://www.wellfxib.com"> -->
+        <a routerLink="/signin" routerLinkActive="active" translate>
+          <button class="yellowButton miniButton" translate>Sign in</button></a
+        >
+      </li>
+    </ul>
+    <button class="hamburger" (click)="hamburger()">
+      <img class="hamburgerIcon" src="../../assets/hamburger.png" />
+    </button>
+  </div>
+</header>
+<script src="../../scripts/hamburger.js"></script>

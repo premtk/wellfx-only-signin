@@ -1,0 +1,165 @@
+a {
+    text-decoration: none;
+  }
+  
+  .mainHeader .active {
+    color: #f0d850;
+  }
+  
+  .mainHeader {
+    height: 74px;
+    background-color: rgba(51, 51, 51, 70%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 8px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: calc(100% - 64px);
+  }
+  
+  .mainHeader * {
+    font-family: "David";
+  }
+  
+  .mainHeader .logo {
+    height: 58px;
+  }
+  
+  .mainHeader ul {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .mainHeader li {
+    margin: 0px 8px;
+    list-style: none;
+  }
+  .mainHeader li:nth-last-child(01),
+  .mainHeader li:nth-last-child(03) {
+    margin: 0px;
+  }
+  .mainHeader .miniButton {
+    margin: 0px;
+  }
+  .mainHeader a {
+    color: #ffffff;
+  }
+  .mainHeader a:hover,
+  .mainHeader a:focus {
+    color: #f0d850;
+  }
+  
+  .mainHeader .langSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+  }
+  
+  .mainHeader select {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding-left: 4px;
+  }
+  
+  .mainHeader select * {
+    color: #000;
+    font-size: 18px;
+    padding: 8px 0px;
+    width: 64px;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .mainHeader select:hover,
+  .mainHeader select:focus {
+    color: #f0d850;
+    cursor: pointer;
+  }
+  
+  .langIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1025px) {
+    ul.contact {
+      display: flex !important;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    /* .mainHeader .logo {
+      height: 50%;
+    } */
+    .mainHeader a {
+      font-size: 16px;
+    }
+    .mainHeader {
+      width: calc(100% - 32px);
+      padding: 8px 16px;
+    }
+    .hamburger {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 999;
+      border: none;
+      background-color: transparent;
+    }
+    .hamburgerIcon {
+      width: 40px;
+      height: 40px;
+    }
+  
+    ul.contact {
+      position: absolute;
+      top: 70px;
+      right: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      background: white;
+      border-radius: 4px;
+      padding: 16px 0px !important;
+      margin: 16px;
+      display: none;
+      width: 288px;
+      justify-content: space-between;
+    }
+    ul.contact li {
+      width: 100%;
+      height: 32px;
+      text-align: center;
+      margin: 0px;
+    }
+    ul.contact * {
+      color: #333333;
+      vertical-align: middle;
+    }
+    ul.contact button {
+      height: 24px;
+      width: 80px;
+      font-size: 16px;
+      padding: 0px;
+    }
+    ul.contact select {
+      height: auto;
+      font-size: 16px;
+    }
+  }
+  

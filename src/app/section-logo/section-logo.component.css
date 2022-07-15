@@ -1,0 +1,10 @@
+.sectionLogo {
+    margin: 154px auto 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.sectionLogo img {
+    margin-bottom: 24px;
+}
